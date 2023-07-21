@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: sienna;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plano {
+    width: 240px;
+    height: 300px;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: rotateY(4deg) rotateX(0deg);
+    display: flex;
+    perspective: 750px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pared {
+    width: 248px;
+    transition: all 2s ease;
+    height: 300px;
+    transform: translateZ(-150px);
+    position: absolute;
+}
+
+.piso {
+    width: 300px;
+    transition: all 2s ease;
+    height: 300px;
+    position: absolute;
+    transform: translateY(150px) rotateX(90deg);
+}
+
+
+
+
+
+
+
+.meson {
+    width: 248px;
+    height: 60px;
+    background: black;
+    position: absolute;
+    transform: translateY(68px) translateZ(-109px) rotateX(90deg);
+}
+
+.meson-lateral-izquierdo {
+    width: 60px;
+    height: 82px;
+    object-fit: cover;
+    background-size: cover;
+    background-image: url(https://img.freepik.com/foto-gratis/suelo-madera-marron-textura-fondo_53876-65252.jpg);
+    transform: translateY(109px) translateX(-124px) translateZ(-109px) rotateY(90deg);
+    position: absolute;
+}
+
+.meson-lateral-derecho {
+    width: 60px;
+    height: 82px;
+    background-image: url(https://img.freepik.com/foto-gratis/suelo-madera-marron-textura-fondo_53876-65252.jpg);
+    transform: translateY(109px) translateX(124px) translateZ(-109px) rotateY(90deg);
+    position: absolute;
+}
+
+.meson.bajo {width: 248px;height: 60px;background: white;position: absolute;transform: translateY(149px) translateZ(-109px) rotateX(90deg);}
+
+
+
+.meson-lateral-centro {
+    width: 60px;
+    height: 82px;
+    background: white;
+    transform: translateY(109px) translateX(-42px) translateZ(-109px) rotateY(90deg);
+    position: absolute;
+}
+
+.meson-lateral-centrodos {
+    width: 60px;
+    height: 82px;
+    background: white;
+    transform: translateY(109px) translateX(42px) translateZ(-109px) rotateY(90deg);
+    position: absolute;
+}
+
+.meson.medio {
+    width: 248px;
+    height: 60px;
+    background: white;
+    position: absolute;
+    border: 3px solid;
+    transform: translateY(109px) translateZ(-109px) rotateX(90deg);
+}
+
+
+
+.puerta.lado.derecha {
+    width: 42px;
+    height: 82px;
+    background-image: url(https://img.freepik.com/foto-gratis/suelo-madera-marron-textura-fondo_53876-65252.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    transform: translateX(103px) translateZ(-79px) translateY(108px);
+    transform-origin: right;
+    transition: all 2s ease;
+    border: 1px solid;
+}
+
+.puerta.lado.izquierda {
+    width: 42px;
+    height: 82px;
+    background-image: url(https://img.freepik.com/foto-gratis/suelo-madera-marron-textura-fondo_53876-65252.jpg);
+    background-size: cover;
+    position: absolute;
+    transform: translateX(61px) translateZ(-79px) translateY(108px);
+    border: 1px solid;
+    transform-origin: left;
+}
+
+.puerta.lado.derecha:hover {
+    transform: translateX(104px) translateZ(-78px) translateY(109px)rotateY(90deg);
+    transition: all 2s ease;
+}
+
+.puerta.lado.izquierda:hover {
+    transition: ALL 2S EASE;
+    TRANSFORM: translateX(64px) translateZ(-78px) translateY(108px) rotateY(-90deg);
+}
+
+.div {background-image: url(https://img.freepik.com/fotos-premium/textura-madera-clara-textura-madera-diseno-decoracion_256259-327.jpg);}
+
+.puerta.lado.derecha-dos {
+    width: 42px;
+    height: 82px;
+    background-image: url(https://img.freepik.com/foto-gratis/suelo-madera-marron-textura-fondo_53876-65252.jpg);
+    background-size: cover;
+    position: absolute;
+    transform: translateX(20px) translateZ(-79px) translateY(108px);
+    transform-origin: right;
+    transition: all 2s ease;
+    border: 1px solid;
+}
+
+.puerta.lado.izquierda-dos {
+    width: 42px;
+    height: 82px;
+    background-image: url(https://img.freepik.com/foto-gratis/suelo-madera-marron-textura-fondo_53876-65252.jpg);
+    background-size: cover;
+    position: absolute;
+    transform: translateX(-22px) translateZ(-79px) translateY(108px);
+    border: 1px solid;
+    transform-origin: left;
+    transition: all 2s ease;
+}
+
+.puerta.lado.derecha-dos:hover {
+    transform: translateX(20px) translateZ(-78px) translateY(108px) rotateY(90deg);
+    transition: all 2s ease;
+}
+
+.puerta.lado.izquierda-dos:hover {
+    transform: translateX(-21px) translateZ(-78px) translateY(108px) rotateY(-90deg);
+    transition: all 2s ease;
+}
+
+.cajones {
+    width: 81px;
+    height: 20.5px;
+    background-image: url(https://img.freepik.com/foto-gratis/suelo-madera-marron-textura-fondo_53876-65252.jpg);
+    background-size: cover;
+    position: absolute;
+    transform: translateZ(-79px) translateX(-83px) translateY(78px);
+    border: 1px solid;
+    transition: all 2s ease;
+}
+
+.cajones-dos {
+    width: 81px;
+    height: 20.5px;
+    background-image: url(https://img.freepik.com/foto-gratis/suelo-madera-marron-textura-fondo_53876-65252.jpg);
+    background-size: cover;
+    position: absolute;
+    transform: translateZ(-79px) translateX(-83px) translateY(99px);
+    border: 1px solid;
+    transition: all 2s ease;
+}
+
+.cajones:hover {transform: translateZ(-30px) translateX(-83px) translateY(77px);transition: all 2s ease;}
+
+.cajones-dos:hover {
+    transition: all 2s ease;
+    transform: translateZ(-30px) translateX(-83px) translateY(98px);
+}
